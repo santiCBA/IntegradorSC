@@ -194,14 +194,14 @@ header div ul li a {
 
 @media (max-width: 990px) {
     .header-content {
-        padding: 0px 50px 0px 10px;
+        padding: 0px 40px 0px 10px;
     }
     
     .navbar i{
         display: block;
         /* position: absolute; */
         z-index: 10;
-        right: 40px;
+        right: 20px;
         top: 30px;
         padding: 0 20px;
         }
@@ -221,7 +221,13 @@ header div ul li a {
         width: 100%; 
         right: 0;
         background-color: white;
-        gap: 60px;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 550px) {
+    .header-content {
+        padding: 0px 20px 0px 15px;
     }
 }
 
@@ -249,7 +255,9 @@ header div ul li a {
     transform: scale(1.05)
 }
 
-/* HERO */
+
+
+/*---------- HERO ----------*/
 
 #hero {
     flex-wrap: wrap;
@@ -325,7 +333,9 @@ header div ul li a {
     }
 }
 
-/* PRODUCT */
+
+
+/*---------- PRODUCT ----------*/
 
 #product {
     flex-direction: column;
@@ -456,7 +466,9 @@ header div ul li a {
     }
 }
 
-/* ABOUT */
+
+
+/*---------- ABOUT ----------*/
 
 #about {
     /* display: grid; */
@@ -469,29 +481,9 @@ header div ul li a {
     /* grid-template-columns: 1fr 1fr; */
     /* justify-items: center;
     align-items: center; */
-    background-image: url(./img/tienda-img.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
+    color: var(--black);
     padding: 20px;
 }
-
-/* .about-img {
-    background-image: url(./img/tienda-img.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: left;
-    width: 400px;
-    height: 265px;
-    border-radius: 5px;
-    grid-column: 2/3;
-    object-fit: cover;
-    transition: 0.5s;
-}
-
-.about-img:hover {
-    transform: scale(1.05);
-} */
 
 .about-container {
     width: 80%;
@@ -501,16 +493,11 @@ header div ul li a {
     align-items: center;
     justify-content: center;
     gap: 30px;
-    background-color: var(--grey-second2);
-    background-size: cover;
-    color: white;
+    color: var(--black);
     flex-wrap: wrap;
     /* grid-column: 1/2; */
 }
 
-/* .text-container-about {
-    max-width: 800px;
-} */
 
 .text-container-about {
     max-width: max(70%, 800px);
@@ -542,6 +529,7 @@ header div ul li a {
     flex-direction: column;
     background-color: var(--grey);
     text-align: center;
+    color: white;
     width: 250px;
     height: 200px;
     position: relative;
@@ -609,7 +597,7 @@ header div ul li a {
     }
 }
 
-@media (max-width: 1060px) {
+@media (max-width: 1070px) {
     .about-container button {
         display: none;
     }
@@ -635,10 +623,80 @@ header div ul li a {
     }
 }
 
+@media (max-width: 550px) {
+    .about-card {
+        width: 200px;
+        height: 250px;
+    }
+    
+    .about-card-img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .text-container-about {
+        min-width: min(16%, 270px);
+        bottom: 70px;
+    }
+}
+
+@media (max-width: 499px) {
+    #about {
+        gap: 140px;
+    }
+}
+
+
+
+/*---------- CONTACT ----------*/
+
+#contact {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 70px 30px;
+    gap: max(150px, 20%);
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}  
+
+.text-container-contact h2 {
+    font-weight: 700;
+    padding-bottom: 30px;
+}
+
+.text-container-contact p{
+    font-weight: 400;
+    margin: 5px;
+}
+
+.contact-img {
+    background-image: url(./img/tienda-img.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 200px;
+    width: 450px;
+    height: 300px;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: all 0.5s ease-in-out;
+}
+
+.contact-img:hover {
+    transform: scale(1.05);
+}
+
+/*---------- FOOTER ----------*/
+
 .footer {
     display: flex;
     background-color: var(--grey-second);
     justify-content: space-around;
+    flex-direction: row-reverse;
     max-width: 1300px;
     margin: 0 auto;
     flex-wrap: wrap;
@@ -655,8 +713,8 @@ header div ul li a {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: flex-end;
-    font-size: 14px;
+    align-items: flex-start;
+    font-size: 15px;
     min-height: 100px;
 }
 
@@ -670,6 +728,6 @@ header div ul li a {
 }
 
 .footer-terms a {
-    color: black;
+    color: var(--black);
     font-weight: 300;
 }
