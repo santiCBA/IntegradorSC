@@ -19,12 +19,13 @@ body {
 }
 
 :root {
-    --red: #D40000;
+    /* --red: #D40000; */
     --black: #0f1010;
     --grey: #4a4847;
     --grey-second: #b0afa74a;
     --grey-second2: #a75f20d0; 
     --lightblue: #567aac;
+    --salmon: #fa8072;
 }
 
 .section {
@@ -57,7 +58,7 @@ body {
 }
 
 button {
-    background-color: var(--red);
+    background-color: var(--salmon);
     width: 180px;
     height: 40px;
     color: white;
@@ -76,7 +77,7 @@ button:hover {
 }
 
 .btn-comprar {
-    background-color: var(--red);
+    background-color: var(--salmon);
     width: 120px;
     height: 40px;
     color: white;
@@ -130,6 +131,10 @@ button:hover {
 header div ul li a {
     color: var(--black);
     font-size: 14px;
+}
+
+header div ul li a:hover {
+    color: var(--lightblue);
 }
 
 /* box-shadow: rgba(54, 55, 56, 0.359) 0px 8px 24px; */
@@ -603,6 +608,7 @@ header div ul li a {
     }
     .responsive-btn {
         display: block;
+        text-decoration: none;
         /* grid-column: 1/3; */
     }
 }

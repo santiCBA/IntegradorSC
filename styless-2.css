@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    color: white;
+}
+
+section {
+    position: relative;
+    height: 105vh;
+    width: 100%;
+    background: url(./img/surf.img.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.form-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+    width: 380px;
+    padding: 50px 30px;
+    border-radius: 10px;
+    box-shadow: 7px 7px 60px black;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 4px;
+    background-image: url(./img/windone-logo1.png);
+    background-position: center center;
+    background-size: cover;
+    transform: translate(100%,-25%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: .6;
+    transition: opacity .3s easy;
+    padding: 50px;
+    cursor: pointer;
+
+}
+
+.logo:hover {
+    opacity: 1;
+}
+
+.control input {
+    width: 100%;
+    display: block;
+    padding: 10px;
+    color: black;
+    border: none;
+    outline: none;
+    margin: 15px 0;
+}
+
+.control input[type="submit"] {
+    /* background: #567aac; */
+    background: salmon;
+    color: white;
+    font-size: 20px;
+    opacity: .7;
+    transition: opacity .3s easy;
+}
+
+.control input[type="submit"]:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.link {
+    text-align: center;
+}
+
+.link p {
+    font-size: 13px;
+}
+
+.link a {
+    text-decoration: none;
+    color: white;
+    opacity: .6;
+    transition: opacity .3s easy;
+}
+
+link a:hover {
+    opacity: 1;
+}
