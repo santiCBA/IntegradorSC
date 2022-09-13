@@ -16,6 +16,8 @@ html {
 
 body {
     background-color: white;
+    position: relative;
+    min-height: calc(100% - 600px);
 }
 
 :root {
@@ -665,7 +667,7 @@ header div ul li a:hover {
 #contact {
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 70px 30px;
+    padding: 70px 30px 100px;
     gap: max(150px, 20%);
 }
 
@@ -702,6 +704,21 @@ header div ul li a:hover {
     transform: scale(1.05);
 }
 
+@media (max-width: 1000px) {
+    #contact {
+        padding: 70px 30px 200px;
+    }
+}
+
+@media (max-width: 540px) {
+    #contact {
+        padding: 70px 30px 230px;
+    }
+}
+
+
+
+
 /*---------- FOOTER ----------*/
 
 .footer {
@@ -712,7 +729,7 @@ header div ul li a:hover {
     max-width: 1300px;
     margin: 0 auto;
     flex-wrap: wrap;
-    gap: 70px;
+    /* gap: 70px; */
     padding: 30px;
 }
 
@@ -740,6 +757,10 @@ header div ul li a:hover {
     margin-left: 10px;
 }
 
+.footer-social a {
+    text-decoration: none;
+}
+
 .footer-terms {
     display: flex;
     gap: 25px;
@@ -748,4 +769,20 @@ header div ul li a:hover {
 .footer-terms a {
     color: var(--black);
     font-weight: 300;
+}
+
+@media (max-width: 995px) {
+    .footer {
+        gap: 20px;
+        width: 100%;
+        bottom: 0;
+        margin-top: 200px;
+        position: absolute;
+    }
+
+    .footer-container {
+        max-width: 450px;
+        gap: 20px;
+        text-align: center;
+    }
 }
